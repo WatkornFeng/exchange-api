@@ -249,7 +249,8 @@ app.post("/delete", (req, res) => {
     }
   });
 });
-
-app.listen(3001, () => {
+const PORT = 3001;
+app.listen(PORT, () => {
   console.log("running on port 3001");
 });
+module.exports = app;
