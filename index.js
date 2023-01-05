@@ -250,6 +250,10 @@ app.post("/delete", (req, res) => {
   });
 });
 
+app.get("/test", function (req, res) {
+  res.send("Hello from the 'test' URL");
+});
+
 app.listen(3001, () => {
   console.log("running on port 3001");
 });
