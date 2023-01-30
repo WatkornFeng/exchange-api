@@ -12,7 +12,7 @@ const app = express();
 console.log("sad");
 app.use(cors()); // use cors for solve problem 'block by CORS' from fetching api across origin
 app.use(express.json()); // The express.json() function is a built-in middleware function in Express.
-//It parses incoming requests with JSON payloads and is based on body-parser
+//It parses incoming requests with JSON payloads and is based on body-parse
 
 const db = mysql.createConnection(process.env.DATABASE_URL); // connection to database at PlanetScale
 
