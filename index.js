@@ -9,8 +9,7 @@ dotenv.config();
 var jwt = require("jsonwebtoken"); // For generate token from json data and encrpt with base64Url Encoded (Header,payload,signature)
 const secret = process.env.SECRET_TOKEN;
 const app = express();
-console("Change");
-console("Changedsdsd");
+
 app.use(cors()); // use cors for solve problem 'block by CORS' from fetching api across origin
 app.use(express.json()); // The express.json() function is a built-in middleware function in Express.
 //It parses incoming requests with JSON payloads and is based on body-parser
